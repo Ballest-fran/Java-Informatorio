@@ -1,7 +1,7 @@
-package ejerciciosClases;
+package EjerciciosComplementariosLevel1;
 import java.util.*;
 
-public class ejer4{
+public class ejercicio4{
 
     static int factorial(int n){
         if (n>1){
@@ -15,7 +15,7 @@ public class ejer4{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        System.out.println(factorial(num));
+        System.out.println("El factorial de "+num+" es: "+factorial(num));
         scan.close();
         }
     }

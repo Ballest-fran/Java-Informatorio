@@ -1,7 +1,7 @@
-package ejerciciosClases;
+package EjerciciosComplementariosLevel1;
 import java.util.*;
 
-public class ejer3{
+public class ejercicio3{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
