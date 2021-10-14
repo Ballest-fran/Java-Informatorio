@@ -1,18 +1,27 @@
-public class Ejemplo{
+import java.util.Scanner;
 
-    public static void main(String[] args){
-        //Leer archivos .txt
+public class Ejemplo {
+    
+    public static void main(String[] args) {
+        Scanner str =new Scanner(System.in);
+        
+        System.out.println("Introduza una palabra en minuscula, para convertirla en mayuscula: ");
+        String palabra = str.nextLine();
 
-        //recorrer y crear objetos alumnos
-        //cargarlos en una lista
+        str.close();
 
-        String s = "Esto";   
-        s=s.toLowerCase(); // Lo convierte a minúsculas.
-        System.out.println(s);
-        s=s.toUpperCase(); // Lo convierte a mayúsculas.
-        System.out.println(s);
+        System.out.println(amayuscula(palabra));
+    }
+
+    public static String amayuscula(String str) {
+        String palabra = "";
+        for (int i = 0; i < str.length(); i++) {
+            int v = str.charAt(i);
+            if (v > 96 && v < 123) {
+                v -= 32;
+            }
+            palabra+=(char)v;
+        }
+        return palabra;
     }
 }
-
-    String piStr = "3.14159";
-    Float pi = Float.valueOf(piStr);
