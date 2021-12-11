@@ -1,15 +1,19 @@
 package EjerciciosComplementariosLevel3;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class alumno {
 	private String apellido;
     private String nombre;
     private LocalDate fechaDeNacimiento;
-	public alumno(String apellido, String nombre, LocalDate fechaDeNacimiento) {
+	public alumno(String apellido, String nombre, LocalDate fecha) {
 		super();
 		this.apellido = apellido;
 		this.nombre = nombre;
-		this.fechaDeNacimiento = fechaDeNacimiento;
+		this.fechaDeNacimiento = fecha;
+ 		//this.fechaDeNacimiento = FechaDeNacimiento;
+	}
+	public alumno(String apellido2, String nombre2, LocalTime now) {
 	}
 	public String getApellido() {
 		return apellido;
